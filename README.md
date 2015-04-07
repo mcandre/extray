@@ -9,6 +9,9 @@ html
 $ extray archive.tar.gz
 gz
 
+$ extray config.XML
+XML
+
 $ extray Dockerfile
 
 $
