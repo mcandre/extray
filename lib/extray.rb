@@ -7,6 +7,10 @@ module Extray
   #
   # Extract file name extension
   #
+  # If no extension, returns empty string.
+  #
+  # If nested extensions appear (e.g., ... .tar.gz), only the last one is returned.
+  #
   # @path a file path (String)
   #
   def self.extension(path)

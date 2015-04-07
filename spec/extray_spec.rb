@@ -7,5 +7,11 @@ describe Extray, '#extension' do
     # ...
   end
 
-  # ...
+  it 'handles no extension' do
+    expect(Extray.extension 'Dockerfile').to eq('')
+  end
+
+  it 'handles nested extensions' do
+    expect(Extray.extension 'archive.tar.gz').to eq('gz')
+  end
 end

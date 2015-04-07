@@ -5,6 +5,13 @@
 ```
 $ extray hello.html
 html
+
+$ extray archive.tar.gz
+gz
+
+$ extray Dockerfile
+
+$
 ```
 
 # HOMEPAGE
