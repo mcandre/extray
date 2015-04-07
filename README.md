@@ -25,6 +25,10 @@ https://github.com/mcandre/extray
 
 https://rubygems.org/gems/extray
 
+# ABOUT
+
+extray is a small, cross-platform command line tool for reporting file name extensions.
+
 # REQUIREMENTS
 
 * [Ruby](https://www.ruby-lang.org/) 1.9+
