@@ -1,0 +1,45 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'optparse'
+require 'extray'
+
+def main
+  option = OptionParser.new do |option|
+    option.banner = 'Usage: extray [options] <path> <path> <path>...'
+
+    option.on('-h', '--help', 'Print usage info') do
+      puts option
+      exit
+    end
+
+    option.on('-v', '--version', 'Print version info') do
+      puts "extray #{Extray::VERSION}"
+      exit
+    end
+  end
+
+  option.parse!
+
+  if ARGV.length < 1
+    puts option
+    exit 1
+  end
+
+  paths = ARGV
+
+  paths.each do |path|
+    puts Extray.extension(path)
+  end
+end
+
+begin
+  main
+# User may quit before completion.
+rescue Interrupt
+  nil
+# May be piped to another program (e.g. `less`),
+# which is quit before completion.
+rescue Errno::EPIPE, Errno::EMFILE
+  nil
+end
