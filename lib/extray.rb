@@ -1,4 +1,4 @@
-require 'version'
+require_relative 'version'
 
 #
 # Extray - extract file name extensions
