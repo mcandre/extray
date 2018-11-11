@@ -2,7 +2,7 @@
 
 # EXAMPLES
 
-```
+```console
 $ extray hello.html
 html
 
@@ -35,14 +35,16 @@ extray is a small, cross-platform command line tool for reporting file name exte
 
 ## Optional
 
-* [pargs](https://github.com/mcandre/pargs)
-* [editorconfig-tools](https://www.npmjs.com/package/editorconfig-tools)
+* [GNU findutils](https://www.gnu.org/software/findutils/)
+* [stank](https://github.com/mcandre/stank) (e.g. `go get github.com/mcandre/stank/...`)
+* [Python](https://www.python.org) 3+ (for yamllint)
+* [Node.js](https://nodejs.org/en/) (for eclint)
 
 # INSTALL
 
 Install via [RubyGems](http://rubygems.org/):
 
-```
+```console
 $ gem install extray
 ```
 
@@ -56,7 +58,7 @@ FreeBSD
 
 Keep the code functioning:
 
-```
+```console
 $ rake test
 ```
 
@@ -64,7 +66,7 @@ $ rake test
 
 Keep the code tidy:
 
-```
+```console
 $ rake lint
 ```
 
