@@ -31,7 +31,7 @@ extray is a small, cross-platform command line tool for reporting file name exte
 
 # REQUIREMENTS
 
-* [ruby](https://www.ruby-lang.org/) 2.7+
+* [ruby](https://www.ruby-lang.org/) 2.7.1+
 
 ## Optional
 
